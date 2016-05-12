@@ -1,0 +1,17 @@
+th, td {
+	border-style: solid;
+	
+}
+
+td {
+	color: blue;
+}
+
+li {
+	font-family: "Lucida Console", Monospace;
+}
+
+.imp {
+	color: red;
+}
+
