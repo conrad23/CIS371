@@ -1,0 +1,45 @@
+body {
+	font-family: "Times New Roman";
+	font-size: medium;
+	color: black;
+}
+
+table p {
+	font-size: small;
+}
+
+ul {
+	color: blue;
+}
+
+div.best p {
+	font-style: italic;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: green;
+}
+
+table {
+	margin: 2px;
+}
+
+table table {
+	margin: 1px;
+}
+
+.odd {
+	background-color: gray;
+}
+
+.even {
+	font-family: sans-serif;
+}
+
+td {
+	width: 300px;
+}
