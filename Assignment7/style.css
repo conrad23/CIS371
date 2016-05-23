@@ -1,0 +1,13 @@
+table {
+	border: solid;
+	margin: 3px;
+}
+
+body {
+	font-family: "Arial";
+}
+
+h3 {
+	font-size: 24px;
+	color: gray;
+}
