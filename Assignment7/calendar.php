@@ -16,6 +16,7 @@ $month_name = date('F', $first_day);
 
 $day_of_week = date('D', $first_day);
 
+//used to offset first week
 switch($day_of_week) {
 	case "Sun": $blank = 0; break;
 	case "Mon": $blank = 1; break;
@@ -28,6 +29,7 @@ switch($day_of_week) {
 
 $days_in_month = cal_days_in_month(0, $month, $year);
 
+//setting up arrow to move back one month
 if ($month == 1) {
 	$previous_month = 12;
 	$year = $year - 1;
@@ -45,6 +47,7 @@ echo '">';
 echo '<img src="left_arrow.png"></a>';
 echo '</td>';
 
+//header information
 echo '<td>';
 echo "<h3>$month_name</h3>";
 echo "<table>";
@@ -53,6 +56,7 @@ echo '<tr style="background-color: gray; font-weight: bold;"><td>Sun</td><td>Mon
 $day_count = 1;
 echo "<tr>";
 
+//insert blank cells for week offset
 while ($blank > 0) {
 	echo "<td></td>";
 	$blank = $blank - 1;
@@ -61,6 +65,7 @@ while ($blank > 0) {
 
 $day_num = 1;
 
+//fill in calendar with days
 while ($day_num <= $days_in_month) {
 	echo "<td> $day_num </td>";
 	$day_num++;
@@ -72,6 +77,7 @@ while ($day_num <= $days_in_month) {
 	}
 }
 
+//fill in remaining cells with blanks
 while ($day_count >1 && $day_count <= 7) {
 	echo "<td> </td>";
 	$day_count++;
@@ -79,6 +85,7 @@ while ($day_count >1 && $day_count <= 7) {
 echo '</tr></table>';
 echo '</td>';
 
+//set up arrow to move ahead one month
 if ($month == 12) {
 	$next_month = 1;
 	$year = $year + 1;
@@ -94,7 +101,6 @@ echo "$year";
 echo '">';
 echo '<img src="right_arrow.png"></a>';
 echo '</td></tr></table>';
-
 
 ?>
 
