@@ -1,0 +1,21 @@
+#friends_table {
+	border-style: solid;
+	margin: 4px;
+}
+
+#friends_table tr {
+	outline: thin solid;
+}
+
+#form_table {
+	border-style: solid;
+	margin: 4px;
+}
+
+th {
+	font-size: 18px;
+}
+
+h3 {
+	margin-left: 4px;
+}
